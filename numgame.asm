@@ -55,7 +55,7 @@ GuessLoop:
     ; Count this try
     ; ADD Instruction
     inc numTries
-    
+                                  ; step 4: comparison logic (CMP + JE/JG/JL)
     ; compare guess with secret
     ; CMP Instruction
     mov eax, userGuess
@@ -90,5 +90,6 @@ Winner:
 main ENDP
 
 END main
+
 
 
