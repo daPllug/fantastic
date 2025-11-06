@@ -73,7 +73,7 @@ TooLow:
     mov edx, OFFSET tooLowMsg
     call WriteString
     jmp GuessLoop
-    
+                                ; step 6: winning condition – show win message and number of tries
 Winner:
     ; Player won!
     mov edx, OFFSET winMsg
@@ -90,6 +90,7 @@ Winner:
 main ENDP
 
 END main
+
 
 
 
