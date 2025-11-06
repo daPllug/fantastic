@@ -42,7 +42,7 @@ main PROC
     
 GuessLoop:
     ; WHILE Loop structure
-    
+                               ; step 3: input loop (prompt, ReadInt, increment tries)
     ; Prompt for guess
     mov edx, OFFSET promptMsg
     call WriteString
@@ -90,4 +90,5 @@ Winner:
 main ENDP
 
 END main
+
 
