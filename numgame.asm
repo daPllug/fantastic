@@ -1,4 +1,5 @@
 TITLE Number Guessing Game 
+; step 7: final cleanup – verified comments and compilation success
 ; gonna use basic concepts
 
 INCLUDE Irvine32.inc
@@ -90,6 +91,7 @@ Winner:
 main ENDP
 
 END main
+
 
 
 
