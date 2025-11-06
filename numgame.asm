@@ -63,7 +63,7 @@ GuessLoop:
     je  Winner                  ; JE Jump if Equal
     jg  TooHigh                 ; JG Jump if Greater
     jl  TooLow                  ; Jump if Less
-    
+                                ; step 5: feedback messages for too high / too low results
 TooHigh:
     mov edx, OFFSET tooHighMsg
     call WriteString
@@ -90,6 +90,7 @@ Winner:
 main ENDP
 
 END main
+
 
 
 
