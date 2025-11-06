@@ -8,7 +8,8 @@ INCLUDE Irvine32.inc
     welcomeMsg  BYTE "===== NUMBER GUESSING GAME =====", 0dh, 0ah
                 BYTE "I'm thinking of a number 1-100", 0dh, 0ah
                 BYTE "Can you guess it?", 0dh, 0ah, 0
-    
+                                                                  ; commit step 2 - generation
+
     promptMsg   BYTE 0dh, 0ah, "Enter your guess: ", 0
     tooHighMsg  BYTE "Too HIGH! Try again.", 0dh, 0ah, 0
     tooLowMsg   BYTE "Too LOW! Try again.", 0dh, 0ah, 0
@@ -89,3 +90,4 @@ Winner:
 main ENDP
 
 END main
+
